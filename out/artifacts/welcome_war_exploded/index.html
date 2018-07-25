@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome New Students
+  </title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar is-transparent  is-fixed-top">
+    <div class="navbar-brand">
+      <a href="index.html">
+        <img class="logo" src="logo.png" alt="UESTC">
+      </a>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <p class="welcome-student">
+          欢迎来到电子科技大学迎新系统!
+        </p>
+
+
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control search">
+            <a class="button">
+              <span class="icon">
+                <i class="fas fa-search"></i>
+              </span>
+              <span class="loginspan">
+                录取查询
+              </span>
+            </a>
+          </p>
+          <p class="control sign-in">
+            <a class="button is-info">
+              <span class="icon">
+                <i class="fas fa-sign-in-alt"></i>
+              </span>
+              <span>登录</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <img class="background" src="o.jpg" alt="background">
+  <form action="/loginServlet" method="post">
+    <div class="signInput">
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="userName" name="id">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+
+        </p>
+      </div>
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" type="password" placeholder="Password" name="password">
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      <br>
+      <div class="field">
+        <p class="control">
+          &emsp;&emsp;&emsp;
+          <a class="button is-danger signInputCancel">
+            关闭
+          </a>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <a class="button is-success signInputSucces">
+            登录
+          </a>
+
+
+        </p>
+      </div>
+      <input type="submit" class="signSubmit">
+    </div>
+  </form>
+
+  <form>
+    <div class="field has-addons searchInput">
+      <div class="control">
+        <input class="input" type="text" placeholder="输入身份证号查询">
+      </div>
+      <div class="control">
+        <a class="button is-info searchInputSubmit">
+          Search
+        </a>
+        <input type="submit" class="searchSubmit">
+      </div>
+    </div>
+  </form>
+  <script src="index.js"></script>
+</body>
+
+</html>

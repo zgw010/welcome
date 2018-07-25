@@ -1,0 +1,66 @@
+#info {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#info td,
+#info th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#info tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#info tr:hover {
+  background-color: #ddd;
+}
+
+#info th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(102, 172, 232);
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+
+html,
+body {
+  display: block;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  font-family: system-ui;
+}
+
+
+
+.searchInputAdmin {
+  position: absolute;
+  top: -5px;
+  right: 460px;
+  width: 400px;
+  padding: 20px 25px 20px 25px;
+  border-radius: 5px;
+  transition: 0.8s;
+  z-index: 100;
+  opacity: 1;
+}
+
+.searchSubmitAdmin {
+  display: none;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.fa-edit {
+  font-size: 18px;
+}

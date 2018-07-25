@@ -1,0 +1,52 @@
+.logo {
+  padding: 5px;
+  width: 240px;
+  height: 60px;
+}
+
+.navbar {
+  border-bottom: 1px solid gainsboro;
+}
+
+.welcome-student {
+  margin: 20px;
+  margin-left: 320px;
+}
+
+.background {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.signInput {
+  position: absolute;
+  top: -150px;
+  right: 170px;
+  width: 400px;
+  padding: 20px 25px 20px 25px;
+  border-radius: 5px;
+  transition: 0.8s;
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.9;
+}
+
+.searchInput {
+  position: absolute;
+  top: -5px;
+  right: 460px;
+  width: 400px;
+  padding: 20px 25px 20px 25px;
+  border-radius: 5px;
+  transition: 0.8s;
+  z-index: 100;
+  opacity: 0;
+}
+
+.searchSubmit {
+  display: none;
+}
+
+.signSubmit {
+  display: none;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome New Students
+  </title>
+  <link rel="stylesheet" href="student.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar is-transparent  is-fixed-top">
+    <div class="navbar-brand">
+      <a href="index.html">
+        <img class="logo" src="logo.png" alt="UESTC">
+      </a>
+    </div>
+
+
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu student-menu">
+      <div class="navbar-start">
+        <a class="navbar-item registrationProcesMenu">
+          报到流程
+        </a>
+        <a class="navbar-item perfectInformationMenu">
+          完善信息
+        </a>
+        <a class="navbar-item payCostMenu">
+          缴纳费用
+        </a>
+        <a class="navbar-item chooseDormitoriesMenu">
+          选择宿舍
+        </a>
+        <a class="navbar-item queryInformationMenu">
+          查询信息
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control sign-in">
+            <a class="button has-text-grey-light"  href="index.html">
+              <span class="icon">
+                <i class="fas fa-sign-in-alt"></i>
+              </span>
+              <span>注销</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="registrationProces">
+    <span class="close icon registrationProcesClose">
+      <i class="fas fa-times"></i>
+    </span>
+    <div>
+      <h3 id="checkbox">新生报到流程如下,请按顺序完成后方可完成新生注册</h3>
+      <br>
+
+      <div>
+        <input type="checkbox" disabled="disabled" class="perfectInformationCheck">
+        <label style="color: #ccc;">完善信息</label>
+      </div>
+      <div>
+        <input type="checkbox" disabled="disabled" class="payCostCheck">
+        <label style="color: #ccc;">缴纳费用</label>
+      </div>
+      <div>
+        <input type="checkbox" disabled="disabled" class="chooseDormitoriesCheck">
+        <label style="color: #ccc;">选择宿舍</label>
+      </div>
+    </div>
+  </section>
+  <section class="perfectInformation">
+    <span class="close icon perfectInformationClose">
+      <i class="fas fa-times"></i>
+    </span>
+    <div class="field has-addons">
+      <div class="control">
+        <a class="button is-light">
+          身份证号
+        </a>
+      </div>
+      <div class="control">
+        <input class="input sid" type="text" placeholder="140322199707066666" disabled>
+      </div>
+    </div>
+    <div class="field has-addons">
+      <div class="control">
+        <a class="button is-light">
+          学号&emsp;&emsp;
+        </a>
+      </div>
+      <div class="control">
+        <input class="input id" type="text" placeholder="2018888888" disabled>
+      </div>
+    </div>
+    <div class="field has-addons">
+      <div class="control">
+        <a class="button is-light">
+          姓名&emsp;&emsp;
+        </a>
+      </div>
+      <div class="control">
+        <input class="input name" type="text" placeholder="嘤嘤嘤" disabled>
+      </div>
+    </div>
+    <div class="field has-addons">
+      <div class="control">
+        <a class="button is-light">
+          学院&emsp;&emsp;
+        </a>
+      </div>
+      <div class="control">
+        <input class="input" type="text" placeholder="计算机科学与工程学院" disabled>
+      </div>
+    </div>
+    <div class="field has-addons">
+      <div class="control">
+        <a class="button is-light">
+          专业&emsp;&emsp;
+        </a>
+      </div>
+      <div class="control">
+        <input class="input" type="text" placeholder="计算机科学与技术" disabled>
+      </div>
+    </div>
+    <div class="field has-addons">
+      <div class="control">
+        <a class="button is-light">
+          班级&emsp;&emsp;
+        </a>
+      </div>
+      <div class="control">
+        <input class="input class_id" type="text" placeholder="001" disabled>
+      </div>
+    </div>
+    <form action="/completeServlet" method="post">
+      <div class="field has-addons">
+        <div class="control">
+          <a class="button is-light">
+            电话号码
+          </a>
+        </div>
+        <div class="control">
+          <input class="input" type="text" placeholder="输入电话号码" name="tel">
+        </div>
+      </div>
+      <div class="field has-addons">
+        <div class="control">
+          <a class="button is-light">
+            家庭住址
+          </a>
+        </div>
+        <div class="control">
+          <input class="input" type="text" placeholder="输入您的家庭住址" name="address">
+        </div>
+      </div>
+      <div class="field is-grouped is-grouped-right">
+        <p class="control">
+          <a class="button is-info perfectInformationSubmitA">
+            <input type="submit" class="perfectInformationSubmit">submit</input>
+          </a>
+        </p>
+      </div>
+    </form>
+
+  </section>
+  <section class="payCost">
+    <span class="close icon payCostClose">
+      <i class="fas fa-times"></i>
+    </span>
+
+    <form action="/payServlet" method="post">
+      <div class="field is-grouped is-grouped-right" style="float: right;">
+
+        <p style="margin-top: 5px;margin-right: 10px">您当前需要缴纳的费用为10000元</p>
+        <p class="control">
+          <a class="button is-info payCostSubmitA">
+            <input type="submit" class="payCostSubmit" style="display: none;">点击缴纳</input>
+          </a>
+        </p>
+      </div>
+
+    </form>
+
+  </section>
+  <section class="chooseDormitories">
+    <span class="close icon chooseDormitoriesClose">
+      <i class="fas fa-times"></i>
+    </span>
+
+    <div class="select">
+      <select class="selectRoom">
+        <option>选择你的宿舍房间</option>
+        <option value="501">501</option>
+        <option value="502">502</option>
+        <option value="503">503</option>
+        <option value="504">504</option>
+        <option value="505">505</option>
+      </select>
+
+    </div>
+    <form action="/dormServlet" style="display: none;" class="chooseDormitoriesForm">
+      <input type="text" class="selectRoomValue" name="room"/>
+      <input type="submit" class="chooseDormitoriesSubmit">
+    </form>
+    <div class="field is-grouped is-grouped-right" style="float: right;">
+      &emsp;
+      <p class="control">
+        <a class="button is-info selectRoomSubmitA">
+          确认选择
+        </a>
+      </p>
+    </div>
+
+
+  </section>
+  <section class="queryInformation">
+    <span class="close icon queryInformationClose">
+      <i class="fas fa-times"></i>
+    </span>
+    <span class="queryInformationInfo">尚未注册成功，请按流程注册。</span>
+  </section>
+  <script src="student.js"></script>
+
+</body>
+
+</html>

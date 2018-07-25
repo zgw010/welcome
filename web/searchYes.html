@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>查询成功</title>
+</head>
+<style>
+  table {
+    border-collapse: separate;
+    background: #fff;
+    border-radius: 5px;
+    margin: 200px auto 50px auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  thead {
+    border-radius: 5px;
+  }
+
+  thead th {
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 20px;
+
+    background-size: 100%;
+    background: hsl(0, 0%, 71%);
+    border-top: 1px solid #858d99;
+  }
+
+  thead th:first-child {
+    border-top-left-radius: 5px;
+  }
+
+  thead th:last-child {
+    border-top-right-radius: 5px;
+  }
+
+  tbody tr td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 13px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+  }
+
+  tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+  }
+
+  tbody:hover>tr td {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+  }
+
+  tbody:hover>tr:hover td {
+    color: #2d2d2d;
+    opacity: 1;
+  }
+
+  html,
+  body {
+    background: #f8f8f8 66%;
+  }
+
+  .tipinfo {
+    width: 405px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .afull:link {
+    color: hsl(171, 100%, 41%);
+  }
+
+  .ahome:link {
+    color: hsl(204, 86%, 53%);
+  }
+</style>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>录取状态</th>
+        <th>学号</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>hasaki</td>
+        <td>20</td>
+        <td>录取</td>
+        <td>2016060107000</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <div class="tipinfo">
+    您已被成功录取,您现在可以选择
+    <a href="www" class="afull">完善您的个人信息</a>,或者
+    <a href="index.html" class="ahome">返回主页</a>
+  </div>
+</body>
+
+<script>
+</script>
+
+</html>

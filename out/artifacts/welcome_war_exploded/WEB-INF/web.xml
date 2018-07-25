@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>AdmitServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.AdmitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdmitServlet</servlet-name>
+        <url-pattern>/admitServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AllScheduleServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.AllScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllScheduleServlet</servlet-name>
+        <url-pattern>/allScheduleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckServlet</servlet-name>
+        <url-pattern>/checkServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CompleteServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.CompleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CompleteServlet</servlet-name>
+        <url-pattern>/completeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DormServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.DormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DormServlet</servlet-name>
+        <url-pattern>/dormServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EnterServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.EnterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnterServlet</servlet-name>
+        <url-pattern>/enterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GrantServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.GrantServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GrantServlet</servlet-name>
+        <url-pattern>/grantServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PassServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.PassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PassServlet</servlet-name>
+        <url-pattern>/passServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PayServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.PayServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PayServlet</servlet-name>
+        <url-pattern>/payServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <servlet-class>org.group.welcome.servlet.ScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <url-pattern>/scheduleServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

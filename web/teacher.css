@@ -1,0 +1,71 @@
+.table-editable .glyphicon {
+  font-size: 20px;
+}
+
+.table-remove {
+  color: #700;
+  cursor: pointer;
+}
+
+.table-remove:hover {
+  color: #f00;
+}
+.table-ok {
+  color: #070;
+  cursor: pointer;
+}
+
+.table-ok:hover {
+  color: #0b0;
+}
+
+
+.table-add {
+  display: none;
+}
+
+.table-add:hover {
+  color: #0b0;
+}
+
+.navbar.is-fixed-top {
+  margin: 0;
+  height: 64px;
+}
+
+.logo {
+  height: 60px;
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  padding: 4px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.informationExamine {
+  top: 200px;
+  display: none;
+}
+
+.informationQuery {
+  top: 200px;
+  display: none;
+}
+.close {
+  color: rgba(226, 221, 221, 0.87);
+}
+
+.container {
+  width:100%;
+}
+
+.icon {
+  cursor: pointer;
+}
+.rLast,.rGo,.rNext {
+  display: none;
+}

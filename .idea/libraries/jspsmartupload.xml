@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jspsmartupload">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/jspsmartupload.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
